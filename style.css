@@ -4,7 +4,7 @@
 margin: 0px;
 padding: 0px;
 font-family: 'ABeeZee', sans-serif;
-font-family: 'DM Sans', sans-serif;
+box-sizing: border-box;
 }
 .logo{
     display: flex;
@@ -27,22 +27,24 @@ font-family: 'DM Sans', sans-serif;
     margin-inline: 10px;
 }
 
+
 .nsdc-logo-in-clear-background-icon{
     width: 77px;
     height: 35px;
 }
 .new-nav-bar{
+    position: fixed; 
     display: flex;
-    background-color: #ffffff00;
+    background-color: #fdfafa;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding: 10px 15px;
     padding-inline: 108px;
+    width: 100%;
 }
 .cta-links{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
 }
@@ -50,13 +52,14 @@ font-family: 'DM Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    text-wrap: nowrap;
     list-style-type: none;
-    padding-right: 20px;
 }
 .cta-links li{
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-right: 20px;
+    margin-left: 1rem;
 }
 
 .new-nav-bar button{
@@ -71,7 +74,10 @@ font-family: 'DM Sans', sans-serif!important;
 
 }
 
+
 .announcement{    
+position: relative;
+top: 70px; 
 text-align: center;
 background-color: #2F80ED;
 color: #FFFFFF;
@@ -80,17 +86,14 @@ font-size: 14px;
 font-style: italic;
 font-weight: 400;
 line-height: 150%;
-letter-spacing: 0.28px;
+width: 100%;
 }
 
 .hero{
-    
+    width: 100%;
     padding: 100px;
     display: flex;
-    
-}
-.hero-career{
-    margin-right: 5rem;
+    justify-content: space-evenly;
 
 }
 .launch{
@@ -117,7 +120,7 @@ color: var(--BLACK, #2B2F34);
 font-weight: 600; 
 }
 .curriculam{
-width: 492px;
+width: 100%;
 color: var(--textlabelcolorscharcoal, #595959);
 font-size: 18px;
 font-weight: 400;
@@ -125,7 +128,9 @@ letter-spacing: 0.36px;
 padding:20px 0px;
 }
 .made-with-love{
+width: fit-content;
 display: inline-block;
+margin: 10px 20px;
 padding: 10px 20px;
 align-items: flex-start;
 border-radius: 23px;
@@ -137,6 +142,7 @@ bottom: 1;
 
 
 .whatweoffer{
+width:100%;
 display: flex;
 padding: 15px 20px;
 justify-content: space-evenly;
@@ -164,10 +170,12 @@ box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.8);
 #gg p:last-child{
   font-size: 10px;
 }
-.login-applay{ height: 70vh;
-display:inline-flex;
+.login-applay{
+height: 70vh;
+display:flex;
 justify-content: space-evenly;
 padding: 28px 24px 32px 24px;
+margin: 28px 24px 32px 24px;
 flex-direction: column;
 align-items: center;
 text-align: center;
@@ -176,7 +184,6 @@ background: #FFF;
 box-shadow: 0px 25px 54px 0px rgba(0, 0, 0, 0.12);
 }
 .login-applay:hover{
-
 box-shadow: 0px 25px 54px 0px rgba(0, 0, 0, 1);
 }
 
@@ -219,7 +226,7 @@ line-height: 150%;
 
 
 .cards{
-profile    display: block;
+  display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -422,7 +429,9 @@ background-color: var(--primaryskyblue, #f57207);
   }
   
   .students {
-    padding: 96px 107px 138px 107px;
+    display: block;
+    padding: 10px;
+
   }
   .students > h1 {
     color: #2b2f34;
@@ -460,6 +469,15 @@ background-color: var(--primaryskyblue, #f57207);
       "d e f";
     grid-gap: 5px;
   }
+
+.d-flex{
+  display: flex;
+}
+.profile{
+  align-items: center;
+  margin-right: 5rem;
+}
+
   .virat {
     grid-area: a;
     padding: 24px;
@@ -556,19 +574,40 @@ background-color: var(--primaryskyblue, #f57207);
 @media (max-width:600px) {
   .new-nav-bar{
     display: block;
+    background-color: #f0e5e5e3;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 15px ;
+    padding-inline: 50px;
+    width: 100%;
+  }
+  .announcement{
+    width: 100%;
   }
   .hero{
+   display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
 .cta-links{
   padding-inline: 10px;
-
   text-wrap: nowrap;
   justify-content:none;
 }
-.hero{
-  margin-inline-end: 20px;
+
+
+.new-nav-bar button{
+  display: none;
 }
+.contain{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:10px;
 }
+
+}
+
+ 
