@@ -573,6 +573,7 @@ background-color: var(--primaryskyblue, #f57207);
   }
 @media (max-width:600px) {
   .new-nav-bar{
+    position: fixed;
     display: block;
     background-color: #f0e5e5e3;
     justify-content: space-between;
@@ -582,6 +583,7 @@ background-color: var(--primaryskyblue, #f57207);
     width: 100%;
   }
   .announcement{
+    top:80px;
     width: 100%;
   }
   .hero{
